@@ -1,0 +1,58 @@
+.leftColumn{
+    width: 25%;
+    padding: 8px 15px;
+    height: 100%;
+    border: 1px solid black;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* .leftColumn::-webkit-scrollbar{
+    appearance: none;
+}
+.leftColumn::-webkit-scrollbar:hover{
+    appearance: auto;
+} */
+/* .leftColumn::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.leftColumn::-webkit-scrollbar-thumb {
+  background: #888;
+} */
+.leftColumn ul{
+    width: 100%;
+}
+.leftColumn > ul li{
+    background-color: transparent;
+    margin-bottom: 10px;
+    padding: 7px 8px;
+    border-radius: 6px;
+}
+.leftColumn > ul li:hover,
+.rightColumn > ul > li:hover{
+    background-color: #E4E6EB;
+}
+.leftColumn > ul li > a,
+.rightColumn > ul li > a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+.leftColumn > ul li > a p{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.leftColumn > ul li > a > img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px){
+    .leftColumn{
+        display: none;
+    }
+    
+}
